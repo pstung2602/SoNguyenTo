@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers=parseInt(prompt("Nhap so: "));
+    let count=0;
+    let N=2;
+    while(count<numbers) {
+        if(check(N)){
+            document.write(N+",");
+            N++;
+            count++;
+        }else{
+            N++;
+        }
+
+    }
+    function check(x) {
+        for (let i = 2; i < x; i++) {
+            if (N % i === 0) {
+                return false;
+            }
+
+        }
+        return true;
+    }
+
+</script>
+
+</body>
+</html>
